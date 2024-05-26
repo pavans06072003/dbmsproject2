@@ -1,36 +1,15 @@
-var mysql      = require('mysql');
-var connection = mysql.createConnection({
-  host : 'localhost',
-  user : 'root',
-  port :  '3306',
-  password : 'Root@123',
-  database : 'Exam'
+const mysql = require('mysql2')
+
+const con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "Password",
+    database: 'exam'
+})
+
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
 });
 
-class Db{
-  constructor(){
-    connection.connect();
-  }
-  query(SelectQuery){
-    return new Promise(async(resolve,reject)=>{
-      try{
-
-      console.log("SelectQuery==>", SelectQuery);
-      connection.query(SelectQuery, function (error, results, fields) {
-        if (error)
-          return reject(error);
-        resolve(results);
-      });
-
-      //connection.end();
-    }
-    catch(err){
-      console.log(err);
-      return reject(err);
-    }
-    })
-  }
-
-}
-
-module.exports = new Db();
+module.exports = con;

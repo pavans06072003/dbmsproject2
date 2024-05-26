@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mui/material": "^5.15.18",
     "@react-navigation/bottom-tabs": "^5.8.0",
     "@react-navigation/material-top-tabs": "^5.2.16",
     "bootstrap": "^4.5.2",
@@ -11,7 +12,7 @@
     "react-countdown-clock": "^2.7.0",
     "react-dom": "^16.13.1",
     "react-native-tab-view": "^2.15.1",
-    "react-scripts": "^3.4.3"
+    "react-router-dom": "^6.23.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,7 +38,9 @@
   "proxy": "http://localhost:5000/",
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
   "author": "",
   "license": "ISC"
 }

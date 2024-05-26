@@ -8,4 +8,6 @@ app.use(bodyParser.json());
 app.use(express.json({limit:'5mb'}));
 app.use("/api",router);
 
-app.listen(PORT);
+app.listen(PORT,()=>{
+    console.log('server is running',PORT);
+});
