@@ -71,6 +71,7 @@ const Result = (props) => {
     <>
       <Navbar />
       <br></br><br></br><br></br>
+      <br></br><br></br>
       <Table striped bordered hover>
         <thead>
           <tr>

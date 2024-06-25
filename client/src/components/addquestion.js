@@ -94,6 +94,7 @@ export const Addquestion = () => {
                             <label>Correct Answer:</label>
                             <input
                                 type="text"
+                                placeholder='a/b/c/d'
                                 value={correctAnswer}
                                 onChange={handleCorrectAnswerChange}
                             />

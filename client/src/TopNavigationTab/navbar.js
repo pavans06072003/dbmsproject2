@@ -14,7 +14,7 @@ export const Navbar = () => {
 
 
     return (
-        < nav className="navbar navbar-expand-lg navbar-light bg-secondary fixed-top" >
+        < nav className="navbar navbar-expand-lg navbar-light bg__navbar fixed-top" >
             <div className="container-fluid">
                 <h2>Online Examination System</h2>
 
@@ -38,7 +38,7 @@ export const Navbar = () => {
                     </div> */}
 
                 </div>
-                <button style={{ border: "none", borderRadius: "5px" }} onClick={() => history('/')}>LogOut</button>;
+                <button style={{ border: "none", borderRadius: "5px" }} onClick={() => history('/')}>LogOut</button>
             </div>
         </nav >
     )

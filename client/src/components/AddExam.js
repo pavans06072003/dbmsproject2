@@ -26,6 +26,7 @@ export const AddExam = () => {
       const handlesubmit=async()=>{
         const {eid ,title,right, wrong,total,time,scheduled_date,branch_id , scheduled_time}=formData;
         const data={eid ,title,right, wrong,total,time,scheduled_date,branch_id , scheduled_time}
+        console.log(data);
         const response = await fetch("/api/addexam", {
             method: "POST",
             headers: {
@@ -35,7 +36,7 @@ export const AddExam = () => {
           });
           const result = await response.json();
           console.log(result)
-          if (result.length) {
+          if (result) {
             console.log("client==>", result);
             alert ("exam added successfully");
             his(`/addque?eid=${eid}&&branch_id=${branch_id}&&total=${total}`);

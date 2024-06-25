@@ -39,11 +39,11 @@ export const Showexam = () => {
                   exams.map((exam, index)=>{
                     return (
                      <>
-                     <div style={{ marginLeft: "450px" }}>
+                     <div style={{ marginLeft: "450px",marginTop:"75px" }}>
                      <div class="card w-75">
                          <div class="card-body">
                              <h5 class="card-title">Title: {exam.title}</h5>
-                             <span>Total Questions: {exam.total}</span> <span style={{marginLeft:"200px"}}>Total Time: {exam.time}</span>  <span  style={{marginLeft:"200px"}}>Date: {new Date(exam.scheduled_date).toLocaleDateString()}</span>
+                             <span>Total Questions: {exam.total}</span> <span style={{marginLeft:"150px"}}>Total Time: {exam.time} sec</span>  <span  style={{marginLeft:"150px"}}>Scheduled Date: {new Date(exam.scheduled_date).toLocaleDateString()}</span>
                              <br></br>
                              <button class="btn btn-primary"  ><Link to={`/test?eid=${exam.eid}&&branch_id=${branch_id}`}style={{color:"black"}}>Take test</Link></button>
                          </div>

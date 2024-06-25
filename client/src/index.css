@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.hero__card{
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+}
+
+.my__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 4rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: auto;
+  /* background-color: red; */
+}
+
+.wrapper{
+  /* background-color: blue; */
+}
+
+.bg__navbar{
+  background-color: rgb(228, 228, 228);
+}
+
+img{
+  width: 100%;
+  border-radius: 10px;
+}
